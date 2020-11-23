@@ -8,7 +8,11 @@ collective.metadataaudit
 ========================
 
 ``collective.metaaaudit`` logs metadata changes to Plone content objects transparently
-(for all content types).
+(for all content types). This add-on in in particular useful when you have to answer
+the question "who was doing what and when".
+
+Install and use this add-on with care. In particular ensure that its usage is compliant
+with your local privacy and data-protection legislation.
 
 Features
 --------
