@@ -19,6 +19,8 @@ Features
 
 - logs all metadata changes (create and edit operations) for all Plone content types 
   (Dexterity content-types only)
+- the metadata changes are logged through `zopyx.plone.persistentlogger` as annotation
+  in order to retrieve them directly at any time
 
 
 Installation
