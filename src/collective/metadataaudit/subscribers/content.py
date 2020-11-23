@@ -7,6 +7,7 @@
 
 
 import zope.component
+from plone.app.textfield.value import RichTextValue
 from plone.dexterity.interfaces import IDexterityFTI
 from plone.behavior.interfaces import IBehaviorAssignable
 from plone.dexterity.interfaces import IDexterityContent
@@ -45,6 +46,8 @@ def modified(event):
         v = getattr(obj, f, None)
         if callable(v):
             v = v()
+        if isinstance(v, RichTextValue):
+            v = v.raw
         data[f] = v
     IPersistentLogger(obj).log("Metadata changed", details=data)
 
