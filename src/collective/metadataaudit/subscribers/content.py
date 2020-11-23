@@ -1,5 +1,5 @@
 ################################################################
-# dynamore.policy
+# collective.metadataaudit
 ################################################################
 
 # Subscriber for modify/created event for logging all metadata changes
