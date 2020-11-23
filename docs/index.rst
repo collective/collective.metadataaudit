@@ -1,0 +1,5 @@
+========================
+collective.metadataaudit
+========================
+
+User documentation
